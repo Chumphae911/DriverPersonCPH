@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">DriverPerson</string>
+    <string name="ques">แบบประเมินพนักงานขับรถ</string>
+    <string name="driverfast">1.ความเร็วเกินไม่เกิน 90 กม./ชม.</string>
+    <string name="driverfast1">เกิน 90 กม./ชม.</string>
+    <string name="driverfast2">ไม่เกิน 90 กม./ชม.</string>
+    <string name="phone">2.มีการใช้โทรศัพท์ขณะขับรถ(มีหูฟังหรือไม่)</string>
+    <string name="phone1">ใช้โทรศัพท์มีหูฟัง</string>
+    <string name="phone2">ใช้โทรศัพท์ไม่มีหูฟัง</string>
+    <string name="phone3">ไม่ได้ใช้โทรศัพท์</string>
+    <string name="smoking">3.สูบบุหรี่ระหว่างปฎิบัติหน้าที่</string>
+    <string name="smoking1">มีการสูบบรี่</string>
+    <string name="smoking2">ไม่มีการสูบบรี่</string>
+    <string name="conduct">4.ความประพฤติ เช่น กริยามารยาท/การร้องเรียนจากผู้ใช้บริการหรือเพื่อนร่วมงาน</string>
+    <string name="conduct1">มีความประพฤติดี</string>
+    <string name="conduct2">มีความประพฤติดไม่ดี</string>
+    <string name="supmit">บันทึกประเมิน</string>
 </resources>

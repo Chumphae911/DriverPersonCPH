@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListViewMain" />
-        <activity android:name=".ListView_Item"></activity>
+        <activity android:name=".ListView_Item" />
+        <activity android:name=".Question"></activity>
     </application>
 
 </manifest>
