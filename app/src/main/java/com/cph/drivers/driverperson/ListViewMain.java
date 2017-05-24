@@ -20,15 +20,17 @@ public class ListViewMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_main);
 
+        //Initail View
         initailView();
 
-
+        //Controller
         controller();
 
 
     } // Main Method
 
     private void controller() {
+
 
 
     }
