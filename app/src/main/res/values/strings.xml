@@ -1,4 +1,10 @@
 <resources>
+
+    <string name="username">ชื่อผู้ใช้งาน</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="register">สมัครสมาชิก</string>
+    <string name="btnlogin">Singin</string>
+
     <string name="app_name">DriverPerson</string>
     <string name="ques">แบบประเมินพนักงานขับรถ</string>
     <string name="driverfast">1.ความเร็วเกินไม่เกิน 90 กม./ชม.</string>
@@ -15,4 +21,30 @@
     <string name="conduct1">มีความประพฤติดี</string>
     <string name="conduct2">มีความประพฤติดไม่ดี</string>
     <string name="supmit">บันทึกประเมิน</string>
+
+    <string name="txt1">แบบฟอร์มเขียนฝากรับ - ส่ง พัสดุ</string>
+    <string name="txt2">เรียน ผู้อำนวยการ โรงพยาบาลชุมแพ</string>
+    <string name="txt3">ข้าพเจ้า ฝ่าย/งาน/กลุ่มงาน ขออนุญาตใช้รถราชการ</string>
+    <string name="txt4">เพื่อไปที่</string>
+    <string name="txt6">จังหวัด</string>
+    <string name="txt7">อำเภอ</string>
+    <string name="txt8">ในวันที่</string>
+    <string name="txt9">ถึงวันที่</string>
+    <string name="txt10">เพื่อ</string>
+    <string name="txt11">ความเร่งด่วน</string>
+    <string name="txt12">เรื่อง</string>
+    <string name="edt2">--สถานที่ที่ต้องไป--</string>
+    <string name="edt3">--โปรดระบุจังหวัด--</string>
+    <string name="edt4">--โปรดระบุอำเภอ--</string>
+    <string name="edt5">01-01-2560</string>
+    <string name="edt6">01-01-2260</string>
+    <string name="edt7">--เลือกวัตถุประสงค์--</string>
+    <string name="edt8">--เลือกวัตถุประสงค์--</string>
+    <string name="edt9">--เลือกวัตถุประสงค์--</string>
+    <string name="btnsubmit">บันทึก</string>
+
+    <string name="btnlistview">btnListView</string>
+    <string name="btnlistvew_item">btnListVew_Item</string>
+
+
 </resources>

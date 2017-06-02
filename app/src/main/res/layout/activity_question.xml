@@ -29,7 +29,7 @@
             android:background="@color/colorPrimaryDark"
             android:padding="15dp"
             android:text="@string/ques"
-            android:textColor="black"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold|normal" />
 
