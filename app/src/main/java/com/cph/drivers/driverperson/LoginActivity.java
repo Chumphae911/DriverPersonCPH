@@ -9,6 +9,7 @@ package com.cph.drivers.driverperson;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
+    //Explicit
     private EditText userEditText, passwordEditText;
     private TextView textView;
     private Button button;
@@ -46,7 +47,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //For TextView
         if (v == textView) {
-
 
         }
 

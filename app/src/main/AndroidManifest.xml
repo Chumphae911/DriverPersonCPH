@@ -20,7 +20,8 @@
         <activity android:name=".ListView_Item" />
         <activity android:name=".Question" />
         <activity android:name=".Deliver" />
-        <activity android:name=".ListMain"></activity>
+        <activity android:name=".ListMain" />
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>
