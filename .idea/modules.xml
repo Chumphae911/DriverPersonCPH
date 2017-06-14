@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DriverPerson.iml" filepath="$PROJECT_DIR$/DriverPerson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DriverPersonCPH.iml" filepath="$PROJECT_DIR$/DriverPersonCPH.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
