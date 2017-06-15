@@ -45,6 +45,8 @@
 
     <string name="btnlistview">btnListView</string>
     <string name="btnlistvew_item">btnListVew_Item</string>
+    <string name="newregis">newregis</string>
+    <string name="information">information</string>
 
 
 </resources>
