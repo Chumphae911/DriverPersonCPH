@@ -13,8 +13,6 @@ public class ListViewMain extends AppCompatActivity {
     private ArrayList<ListView_Item> data_normal;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +27,15 @@ public class ListViewMain extends AppCompatActivity {
 
     } // Main Method
 
+    private void initailView() {
+
+
+
+    }
+
     private void controller() {
 
-
-
     }
 
-    private void initailView() {
-        listView  = (ListView) findViewById(R.id.main_listview);
 
-    }
 }

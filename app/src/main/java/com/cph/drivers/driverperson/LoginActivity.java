@@ -1,5 +1,6 @@
 package com.cph.drivers.driverperson;
 
+        import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
@@ -25,7 +26,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //Controller
         controller();
-    }
+
+
+    } //Mian methot
+
 
     private void controller() {
         textView.setOnClickListener(LoginActivity.this);
@@ -47,8 +51,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //For TextView
         if (v == textView) {
+            Intent intent = new Intent(LoginActivity.this, Register.class);
 
-        }
+        } //Inten t to register
 
         //For Button
         if (v == button) {
