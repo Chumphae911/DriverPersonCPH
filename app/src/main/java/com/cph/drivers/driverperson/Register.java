@@ -1,5 +1,6 @@
 package com.cph.drivers.driverperson;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     private EditText nameEditText, lnameEditText, idEditText, talEditText, userEditText, pwEditText, cpwEditText;
-    private ImageView imageView;
+    private ImageView rUploadimageView, rbackImageView;
     private Button btnUpload, rSubmit;
     private String nameString, lnameString, idString, talString, userString, pwString, cpwString;
 
@@ -31,6 +32,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
 
     private void controller() {
+        rbackImageView.setOnClickListener(Register.this);
         btnUpload.setOnClickListener(Register.this);
         rSubmit.setOnClickListener(Register.this);
 
@@ -38,8 +40,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
 
 
-    private void initialView() {
 
+    private void initialView() {
+        rbackImageView = (ImageView) findViewById(R.id.rback);
         nameEditText = (EditText) findViewById(R.id.editrusername);
         lnameEditText = (EditText) findViewById(R.id.editrlname);
         idEditText = (EditText) findViewById(R.id.editpid);
@@ -47,7 +50,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         userEditText = (EditText) findViewById(R.id.edituser);
         pwEditText = (EditText) findViewById(R.id.editpw);
         cpwEditText = (EditText) findViewById(R.id.editcpw);
-        imageView = (ImageView) findViewById(R.id.imageUpload);
+        rUploadimageView = (ImageView) findViewById(R.id.rUpload);
         btnUpload = (Button) findViewById(R.id.btnUpload);
         rSubmit = (Button) findViewById(R.id.rSupmit);
 
@@ -56,6 +59,11 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
 
+        if (v == rbackImageView) {
+            finish();
+        }
+
+        //rSubmit
         if (v == rSubmit) {
 
             //Get Value From Edit Text ดึงค่าจาก Editer มาประมวลผล
@@ -63,6 +71,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             lnameString = lnameEditText.getText().toString().trim();
             idString = idEditText.getText().toString().trim();
             talString = talEditText.getText().toString().trim();
+
             userString = userEditText.getText().toString().trim();
             pwString = pwEditText.getText().toString().trim();
             cpwString = cpwEditText.getText().toString().trim();
