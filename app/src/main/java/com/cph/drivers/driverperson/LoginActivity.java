@@ -14,6 +14,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText userEditText, passwordEditText;
     private TextView textView;
     private Button button;
+    private  String userString, passwordString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,13 +52,35 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         //For TextView
         if (v == textView) {
-            Intent intent = new Intent(LoginActivity.this, Register.class);
 
-        } //Inten t to register
+            //Intent to Register
+            Intent intent = new Intent(LoginActivity.this, Register.class);
+            startActivity(intent);
+
+        }
 
         //For Button
         if (v == button) {
 
+            //Get Value From EditText
+            userString = userEditText.getText().toString().trim();
+            passwordString = passwordEditText.getText().toString().trim();
+
+            //Check Space
+            if (userString.equals("") || passwordString.equals("")) {
+                //Have Space
+                Myalert myalert = new Myalert(LoginActivity.this);
+                myalert.myDialog("Have Space", "Please Fill All Every Blank");
+
+            } else {
+                //No Space
+                checkUserAnPass();
+            }
         }
+    }
+
+    private void checkUserAnPass() {
+
+
     }
 }//Main clasd

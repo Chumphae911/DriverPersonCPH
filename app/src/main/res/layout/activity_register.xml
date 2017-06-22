@@ -178,7 +178,7 @@
             <Button
                 android:id="@+id/btnUpload"
                 android:layout_width="220dp"
-                android:layout_height="41dp"
+                android:layout_height="47dp"
                 android:layout_marginStart="10dp"
                 android:text="@string/rupload"
                 android:textColor="@color/black"
@@ -190,14 +190,15 @@
     </LinearLayout>
 
     <Button
+        android:layout_marginStart="20dp"
         android:id="@+id/rSupmit"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/bg_btn_button"
         android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:textStyle="bold|normal"
         android:textSize="@dimen/h2"
         android:text="@string/btnregis"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_width="320dp"
+        android:layout_height="50dp" />
 
 </RelativeLayout>

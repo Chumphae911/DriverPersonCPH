@@ -2,15 +2,18 @@ package com.cph.drivers.driverperson;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText nameEditText, lnameEditText, idEditText, talEditText, userEditText, pwEditText, cpwEditText,
-            imageUploadEditText;
-    private Button bntUpload, rSubmit;
+    private EditText nameEditText, lnameEditText, idEditText, talEditText, userEditText, pwEditText, cpwEditText;
+    private ImageView imageView;
+    private Button btnUpload, rSubmit;
     private String nameString, lnameString, idString, talString, userString, pwString, cpwString;
 
 
@@ -28,6 +31,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
 
     private void controller() {
+        btnUpload.setOnClickListener(Register.this);
         rSubmit.setOnClickListener(Register.this);
 
     }
@@ -43,8 +47,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         userEditText = (EditText) findViewById(R.id.edituser);
         pwEditText = (EditText) findViewById(R.id.editpw);
         cpwEditText = (EditText) findViewById(R.id.editcpw);
-        imageUploadEditText = (EditText) findViewById(R.id.imageUpload);
-        bntUpload = (Button) findViewById(R.id.btnUpload);
+        imageView = (ImageView) findViewById(R.id.imageUpload);
+        btnUpload = (Button) findViewById(R.id.btnUpload);
         rSubmit = (Button) findViewById(R.id.rSupmit);
 
     }
@@ -75,9 +79,32 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             }
             else {
                 //No Space
+
+                try {
+                    PortData portData = new PortData(Register.this);
+                    portData.execute(nameString, lnameString, idString, talString, userString, pwString, cpwString);
+
+                    String result = portData.get();
+                    Log.d("18JuneV1", "e doin ==>" + result);
+
+                    if (Boolean.parseBoolean(result)) {
+
+                        //True
+                        Toast.makeText(Register.this, "Upload Value To Server OK",
+                                Toast.LENGTH_SHORT).show();
+                        finish();
+                    } else {
+                        //False
+                        Toast.makeText(Register.this, "Cannon Upload",
+                                Toast.LENGTH_SHORT).show();
+
+                    }
+
+
+                } catch (Exception e) {
+                    Log.d("18JuneV1", "e doin ==>" + toString());
+                }
             }
-
         }
-
     }
 }  //Main class
