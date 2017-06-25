@@ -25,7 +25,8 @@
     <string name="txt1">แบบฟอร์มเขียนฝากรับ - ส่ง พัสดุ</string>
     <string name="txt2">เรียน ผู้อำนวยการ โรงพยาบาลชุมแพ</string>
     <string name="txt3">ข้าพเจ้า ฝ่าย/งาน/กลุ่มงาน ขออนุญาตใช้รถราชการ</string>
-    <string name="txt4">เพื่อไปที่</string>
+    <string name="txt4">เพื่อ</string>
+    <string name="txt5">สถานที่</string>
     <string name="txt6">จังหวัด</string>
     <string name="txt7">อำเภอ</string>
     <string name="txt8">ในวันที่</string>
@@ -33,18 +34,119 @@
     <string name="txt10">เพื่อ</string>
     <string name="txt11">ความเร่งด่วน</string>
     <string name="txt12">เรื่อง</string>
-    <string name="edt2">--สถานที่ที่ต้องไป--</string>
-    <string name="edt3">--โปรดระบุจังหวัด--</string>
-    <string name="edt4">--โปรดระบุอำเภอ--</string>
+
     <string name="edt5">01-01-2560</string>
     <string name="edt6">01-01-2260</string>
     <string name="edt7">--เลือกวัตถุประสงค์--</string>
     <string name="edt8">--เลือกวัตถุประสงค์--</string>
-    <string name="edt9">--เลือกวัตถุประสงค์--</string>
+    <string name="edt9">--สถานที่ที่ต้องไป--</string>
+    <string name="edt10">--วัตถุประสงค์--</string>
+    <string name="edt11">--วัตถุประสงค์--</string>
     <string name="btnsubmit">บันทึก</string>
 
     <string name="btnlistview">btnListView</string>
     <string name="btnlistvew_item">btnListVew_Item</string>
+
+
+    <string-array name="For">
+        <item>-เลือกวัตถุประสงค์-</item>
+        <item>ฝากรับ-ส่ง พัสดุ</item>
+    </string-array>
+
+    <string-array name="Urgency">
+        <item>-เลือกวัตถุประสงค์-</item>
+        <item>รอได้</item>
+        <item>ด่วน</item>
+        <item>ด่วนมาก</item>
+    </string-array>
+
+    <string-array name="Province">
+        <item>-โปรดเลือกจังหวัด-</item>
+        <item>01กระบี่</item>
+        <item>02กรุงเทพมหานคร</item>
+        <item>03กาญจนบุรี</item>
+        <item>04กาฬสินธุ์</item>
+        <item>05กำแพงเพชร</item>
+        <item>06ขอนแก่น</item>
+        <item>07จันทบุรี</item>
+        <item>08ฉะเชิงเทรา</item>
+        <item>09ชลบุรี</item>
+        <item>10ชัยนาท</item>
+        <item>11ชัยภูมิ</item>
+        <item>12ชุมพร</item>
+        <item>13เชียงราย</item>
+        <item>14เชียงใหม่</item>
+        <item>15ตรัง</item>
+        <item>16ตราด</item>
+        <item>17ตาก</item>
+        <item>18นครนายก</item>
+        <item>19นครปฐม</item>
+        <item>20นครพนม</item>
+        <item>21นครราชสีมา</item>
+        <item>22นครศรีธรรมราช</item>
+        <item>23นครสวรรค์</item>
+        <item>24นนทบุรี</item>
+        <item>25นราธิวาส</item>
+        <item>26น่าน</item>
+        <item>27บุรีรัมย์</item>
+        <item>28บึงกาฬ</item>
+        <item>29ปทุมธานี</item>
+        <item>30ประจวบคีรีขันธ์</item>
+        <item>31ปราจีนบุรี</item>
+        <item>32ปัตตานี</item>
+        <item>33พระนครศรีอยุธยา</item>
+        <item>34พะเยา</item>
+        <item>35พังงา</item>
+        <item>36พัทลุง</item>
+        <item>37พิจิตร</item>
+        <item>38พิษณุโลก</item>
+        <item>39เพชรบุรี</item>
+        <item>40เพชรบูรณ์</item>
+        <item>41แพร่</item>
+        <item>42ภูเก็ต</item>
+        <item>43มหาสารคาม</item>
+        <item>44มุกดาหาร</item>
+        <item>45แม่ฮ่องสอน</item>
+        <item>46ยโสธร</item>
+        <item>47ยะลา</item>
+        <item>48ร้อยเอ็ด</item>
+        <item>49ระนอง</item>
+        <item>50ระยอง</item>
+        <item>51ราชบุรี</item>
+        <item>52ลพบุรี</item>
+        <item>53เลย</item>
+        <item>54ลำปาง</item>
+        <item>55ลำพูน</item>
+        <item>56ศรีสะเกษ</item>
+        <item>57สกลนคร</item>
+        <item>58สงขลา</item>
+        <item>59สตูล</item>
+        <item>60สมุทรปราการ</item>
+        <item>61สมุทรสงคราม</item>
+        <item>62สมุทรสาคร</item>
+        <item>63สระแก้ว</item>
+        <item>64สระบุรี</item>
+        <item>65สิงห์บุรี</item>
+        <item>66สุโขทัย</item>
+        <item>67สุพรรณบุรี</item>
+        <item>68สุราษฎร์ธานี</item>
+        <item>69สุรินทร์</item>
+        <item>70หนองคาย</item>
+        <item>71หนองบัวลำภู</item>
+        <item>72อ่างทอง</item>
+        <item>73อำนาจเจริญ</item>
+        <item>74อุดรธานี</item>
+        <item>75อุตรดิตถ์</item>
+        <item>76อุทัยธานี</item>
+        <item>77อุบลราชธานี</item>
+    </string-array>
+
+    <string-array name="amplo">
+
+
+
+    </string-array>
+
 
     <string name="newregis">สมัครสมาชิก</string>
     <string name="information">ข้อมูลลงทะเบียน</string>
@@ -59,6 +161,8 @@
     <string name="rconfirmpassword">ยืนยันรหัสผ่าน</string>
     <string name="rupload">เลือกรูป</string>
     <string name="btnregis">ตกลง</string>
+
+
 
 
 </resources>
