@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/txtDate"
+                    android:id="@+id/txtAnuser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin"
@@ -128,6 +128,7 @@
                     android:textStyle="bold|normal" />
 
                 <EditText
+                    android:id="@+id/Dplace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
@@ -175,7 +176,7 @@
                 </Spinner>
 
                 <Spinner
-                    android:id="@+id/amphoe"
+                    android:id="@+id/amphur"
                     android:layout_width="131dp"
                     android:layout_height="match_parent">
 
@@ -255,7 +256,7 @@
                     android:textStyle="bold|normal" />
 
                 <Spinner
-                    android:id="@+id/phoe"
+                    android:id="@+id/Urgency"
                     android:layout_width="180dp"
                     android:layout_height="wrap_content">
 
@@ -278,10 +279,11 @@
                     android:textStyle="bold|normal" />
 
                 <EditText
+                    android:id="@+id/DSubject"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text"
                     android:hint="@string/edt11"
+                    android:inputType="text"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -289,18 +291,16 @@
     </ScrollView>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="1000dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/btnsubmit"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginTop="505dp"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="12dp"
+        android:id="@+id/btnDSubmit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_btn_button"
+        android:text="@string/supmit"
+        android:textSize="20dp"
+        android:textStyle="bold|normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

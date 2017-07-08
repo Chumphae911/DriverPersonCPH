@@ -17,6 +17,10 @@ public class Myalert {
         this.context = context;
     }
 
+    public Myalert() {
+
+    }
+
     public void myDialog(String strTitle, String strMassage) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -32,5 +36,6 @@ public class Myalert {
         });
         builder.show();
     }
+
 
 } //Main Class

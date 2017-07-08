@@ -19,21 +19,56 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:padding="30dp"
+            android:padding="10dp"
             android:background="#82ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <ImageView
                 android:id="@+id/imageViewLogin"
                 android:layout_width="@dimen/logo"
-                android:layout_height="@dimen/logo"
+                android:layout_height="171dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/cph_logo" />
 
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/chumphae"
+                android:textSize="19dp"
+                android:textStyle="bold|normal" />
+
+            <RadioGroup
+                android:layout_marginStart="12dp"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/Hperson"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:checked="true"
+                    android:text="@string/person" />
+
+                <RadioButton
+                    android:id="@+id/Hdepartment"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/department"
+                    android:layout_weight="0.29" />
+            </RadioGroup>
+
             <LinearLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -73,19 +108,18 @@
 
             <Button
                 android:id="@+id/btnLogin"
-                android:background="@drawable/bg_btn_button"
-                android:textColor="@color/black"
-                android:textStyle="bold|normal"
-                android:textSize="@dimen/h2"
-                android:text="@string/btnlogin"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="12dp" />
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_btn_button"
+                android:text="@string/btnlogin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold|normal" />
 
             <TextView
-                android:clickable="true"
                 android:id="@+id/txtNewRegis"
                 android:textColor="@color/black"
                 android:textStyle="bold"

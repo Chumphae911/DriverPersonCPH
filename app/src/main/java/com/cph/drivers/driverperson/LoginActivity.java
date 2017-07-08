@@ -1,11 +1,14 @@
 package com.cph.drivers.driverperson;
 
         import android.content.Intent;
+        import android.support.annotation.IdRes;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
         import android.widget.EditText;
+        import android.widget.RadioButton;
+        import android.widget.RadioGroup;
         import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -14,7 +17,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText userEditText, passwordEditText;
     private TextView textView;
     private Button button;
-    private  String userString, passwordString;
+    private  String userString, passwordString, tableString = "Driver";
+    private RadioGroup userRadioGroup;
+    private RadioButton personRadioButton, departmentRadioButton;
+    private int tableAnInt = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +32,35 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initialView();
 
         //Controller
-        controller();
+        radioController();
+
 
 
     } //Mian methot
 
+    private void radioController() {
+        userRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-    private void controller() {
-        textView.setOnClickListener(LoginActivity.this);
-        button.setOnClickListener(LoginActivity.this);
+                switch (i) {
+                    case R.id.Hperson:
+                        tableAnInt = 0;
+                        tableString = "Driver";
+                        break;
+                    case R.id.Hdepartment:
+                        tableAnInt = 1;
+                        tableString = "Hdepartmen";
+                        break;
+                    default:
+                        tableAnInt = 0;
+                        tableString = "Driver";
+                        break;
+                }
+            }
+        });
     }
+
 
     private void initialView() {
 
@@ -66,21 +91,31 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             userString = userEditText.getText().toString().trim();
             passwordString = passwordEditText.getText().toString().trim();
 
-            //Check Space
+            //Check Error
             if (userString.equals("") || passwordString.equals("")) {
                 //Have Space
                 Myalert myalert = new Myalert(LoginActivity.this);
                 myalert.myDialog("Have Space", "Please Fill All Every Blank");
 
             } else {
-                //No Space
+                //No Error
                 checkUserAnPass();
             }
         }
     }
 
     private void checkUserAnPass() {
-
+        if (tableAnInt == 0) {
+            checkUser();
+        } else {
+            checkPassengerUser();
+        }
 
     }
-}//Main clasd
+
+    private void checkUser() {
+
+    }
+    private void checkPassengerUser() {
+
+}//Main class

@@ -1,9 +1,12 @@
 <resources>
 
+    <string name="chumphae">ระบบโปรแกรมโรงพยาบาลชุมแพ</string>
     <string name="username">ชื่อผู้ใช้งาน</string>
     <string name="password">รหัสผ่าน</string>
     <string name="register">สมัครสมาชิก</string>
     <string name="btnlogin">Singin</string>
+    <string name="person">บุคคล</string>
+    <string name="department">แผนก</string>
 
     <string name="app_name">DriverPerson</string>
     <string name="ques">แบบประเมินพนักงานขับรถ</string>
@@ -162,6 +165,9 @@
     <string name="rupload">เลือกรูป</string>
     <string name="btnregis">ตกลง</string>
 
+    <string name="cphos">ระบบโรงพยาบาลชุมแพ</string>
+    <string name="HDriver">ฝากรับ-ส่ง พัสดุ</string>
+    <string name="HQuestion">แบบประเมินพนักงานขับรถ</string>
 
 
 
